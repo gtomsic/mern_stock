@@ -10,6 +10,7 @@ import Dashboard from "scenes/dashboard";
 import Products from "scenes/products";
 import Customers from "scenes/customers";
 import Transactions from "scenes/transactions";
+import Geopgraphy from "scenes/geography";
 
 function App() {
     const mode = useSelector((state) => state.global.mode);
@@ -32,6 +33,7 @@ function App() {
                                 path="/transactions"
                                 element={<Transactions />}
                             />
+                            <Route path="/geography" element={<Geopgraphy />} />
                         </Route>
                     </Routes>
                 </ThemeProvider>

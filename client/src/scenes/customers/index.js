@@ -8,7 +8,6 @@ const Customers = () => {
     const theme = useTheme();
     const { data, isLoading } = useGetCustomersQuery();
     if (!data) return;
-    console.log("data", data);
     const columns = [
         {
             field: "_id",
